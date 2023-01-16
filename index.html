@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0">
+        <title>Criptografador</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/logoespiao.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="topo">
+                <img src="img/logocriptografador.png" width="400" height="120" alt="Logo Criptografador" class="logo">                        
+            </div>
+        </header>
+
+        
+        <main>
+            <div class="entrada-texto">
+                <textarea id="texto" class="textarea" onkeyup="tudoMinusculo(this)" name="" id="" placeholder="Digite o texto aqui..."></textarea>
+                <div class="botoes">
+                    <button class="criptografar">Criptografar</button>
+                    <button class="descriptografar">Descriptografar</button>
+                </div>
+            </div>
+  
+            <div class="resposta">
+                <div class="resposta-vazia">
+                    <img src="img/logoespiao.png" alt="logo espiao">
+                    <div class="texto-vazio">
+                        <h3>A mensagem criptografada aparecerá aqui!</h3>
+                    </div>
+                </div>
+                <div class="resposta-preenchida">
+                    <textarea class="texto-codificado" readonly> </textarea>
+                    <button class="botao-copia">Copiar</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="icons">
+                <a href="http://www.linkedin.com/in/jeancarloangeli"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/jeanmga"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <h3>&#169; Desenvolvido por Jean Carlo Angeli - Projeto ONE - ALURA</h3>
+        </footer>
+
+
+    </body>
+    <script src="js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+</html>
